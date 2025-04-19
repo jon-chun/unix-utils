@@ -1,0 +1,12 @@
+# Save as ~/docker-compose.yml
+# Dual NVIDIA RTX 3090s on Ubuntu
+version: '3'
+services:
+  pytorch:
+    image: pytorch/pytorch:latest
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ~/projects:/workspace
+    working_dir: /workspace
