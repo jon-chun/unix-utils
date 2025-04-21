@@ -1,0 +1,66 @@
+[2025-04-19 15:27:39] ✅ Already downloaded: 0 models
+[2025-04-19 15:27:39] 📦 Models to download: 50
+
+[2025-04-19 15:27:39] 
+🚀 Starting download: llama2
+[?2026h[?25l[1Gpulling manifest ⠋ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠙ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠹ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest [K
+pulling 8934d96d3f08...  16% ▕██              ▏ 628 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  16% ▕██              ▏ 628 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  16% ▕██              ▏ 629 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  17% ▕██              ▏ 633 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  17% ▕██              ▏ 636 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  17% ▕██              ▏ 640 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  17% ▕██              ▏ 650 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  17% ▕██              ▏ 653 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  17% ▕██              ▏ 660 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  17% ▕██              ▏ 666 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  18% ▕██              ▏ 670 MB/3.8 GB                  [K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  18% ▕██              ▏ 677 MB/3.8 GB   45 MB/s    1m9s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  18% ▕██              ▏ 684 MB/3.8 GB   45 MB/s    1m9s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  18% ▕██              ▏ 688 MB/3.8 GB   45 MB/s    1m9s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  18% ▕██              ▏ 693 MB/3.8 GB   45 MB/s    1m9s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  18% ▕██              ▏ 693 MB/3.8 GB   45 MB/s    1m9s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  18% ▕██              ▏ 694 MB/3.8 GB   45 MB/s    1m9s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  18% ▕██              ▏ 701 MB/3.8 GB   45 MB/s    1m8s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  19% ▕██              ▏ 709 MB/3.8 GB   45 MB/s    1m8s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  19% ▕██              ▏ 712 MB/3.8 GB   45 MB/s    1m8s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  19% ▕███             ▏ 718 MB/3.8 GB   45 MB/s    1m8s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  19% ▕███             ▏ 726 MB/3.8 GB   46 MB/s    1m6s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  19% ▕███             ▏ 729 MB/3.8 GB   46 MB/s    1m6s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  19% ▕███             ▏ 736 MB/3.8 GB   46 MB/s    1m6s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  19% ▕███             ▏ 743 MB/3.8 GB   46 MB/s    1m5s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  19% ▕███             ▏ 744 MB/3.8 GB   46 MB/s    1m5s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  20% ▕███             ▏ 754 MB/3.8 GB   46 MB/s    1m5s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  20% ▕███             ▏ 762 MB/3.8 GB   46 MB/s    1m5s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  20% ▕███             ▏ 767 MB/3.8 GB   46 MB/s    1m5s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  20% ▕███             ▏ 774 MB/3.8 GB   46 MB/s    1m5s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  20% ▕███             ▏ 782 MB/3.8 GB   46 MB/s    1m5s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  21% ▕███             ▏ 786 MB/3.8 GB   52 MB/s     57s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  21% ▕███             ▏ 791 MB/3.8 GB   52 MB/s     57s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  21% ▕███             ▏ 801 MB/3.8 GB   52 MB/s     57s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  21% ▕███             ▏ 804 MB/3.8 GB   52 MB/s     57s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  21% ▕███             ▏ 812 MB/3.8 GB   52 MB/s     57s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  21% ▕███             ▏ 820 MB/3.8 GB   52 MB/s     57s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  22% ▕███             ▏ 823 MB/3.8 GB   52 MB/s     56s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  22% ▕███             ▏ 831 MB/3.8 GB   52 MB/s     56s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  22% ▕███             ▏ 838 MB/3.8 GB   52 MB/s     56s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  22% ▕███             ▏ 842 MB/3.8 GB   52 MB/s     56s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  22% ▕███             ▏ 849 MB/3.8 GB   55 MB/s     53s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  22% ▕███             ▏ 857 MB/3.8 GB   55 MB/s     53s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  23% ▕███             ▏ 861 MB/3.8 GB   55 MB/s     53s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  23% ▕███             ▏ 867 MB/3.8 GB   55 MB/s     53s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  23% ▕███             ▏ 874 MB/3.8 GB   55 MB/s     53s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  23% ▕███             ▏ 878 MB/3.8 GB   55 MB/s     53s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  23% ▕███             ▏ 885 MB/3.8 GB   55 MB/s     53s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  23% ▕███             ▏ 893 MB/3.8 GB   55 MB/s     53s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  23% ▕███             ▏ 897 MB/3.8 GB   55 MB/s     52s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  24% ▕███             ▏ 905 MB/3.8 GB   55 MB/s     52s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  24% ▕███             ▏ 913 MB/3.8 GB   56 MB/s     51s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  24% ▕███             ▏ 917 MB/3.8 GB   56 MB/s     51s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  24% ▕███             ▏ 925 MB/3.8 GB   56 MB/s     50s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  24% ▕███             ▏ 932 MB/3.8 GB   56 MB/s     50s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  24% ▕███             ▏ 936 MB/3.8 GB   56 MB/s     50s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  25% ▕███             ▏ 943 MB/3.8 GB   56 MB/s     50s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  25% ▕███             ▏ 952 MB/3.8 GB   56 MB/s     50s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  25% ▕███             ▏ 955 MB/3.8 GB   56 MB/s     50s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K
+pulling 8934d96d3f08...  25% ▕████            ▏ 962 MB/3.8 GB   56 MB/s     50s[K[?25h[?2026l[?2026h[?25l[A[1Gpulling manifest [K

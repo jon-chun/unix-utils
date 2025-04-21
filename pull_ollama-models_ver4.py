@@ -95,7 +95,7 @@ def get_downloaded_models() -> list:
     """
     try:
         process = subprocess.Popen(
-            ["ollama", "pull", model_name],
+            ["ollama", "list"],
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
             universal_newlines=True,
