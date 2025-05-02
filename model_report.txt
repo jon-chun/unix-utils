@@ -1,350 +1,166 @@
-llama2
-  download_time_sec: 57.53
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Ollama Model Download Report - 2025-05-01 19:05:20
+=====================================================
 
-llama3.1:8b-instruct-q4_K_M
-  download_time_sec: 87.89
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: granite3.3
+  Status: success
+  Download Time (sec): 149.09
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 32.71
+  Log Tail:
+    pulling 4a99a6dd617d: 100% ▕██████████████████▏  11 KB                         [K
+    pulling 122661774644: 100% ▕██████████████████▏  417 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-llama3.2:3b-instruct-q8_0
-  download_time_sec: 69.46
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: granite3.3:2b
+  Status: success
+  Download Time (sec): 29.62
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 34.15
+  Log Tail:
+    pulling 4a99a6dd617d: 100% ▕██████████████████▏  11 KB                         [K
+    pulling f9ed27df66e9: 100% ▕██████████████████▏  417 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-llama3.2:3b-text-fp16
-  download_time_sec: 120.24
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: granite3.3:8b
+  Status: success
+  Download Time (sec): 0.3
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 34.15
+  Log Tail:
+    pulling 4a99a6dd617d: 100% ▕██████████████████▏  11 KB                         [K
+    pulling 122661774644: 100% ▕██████████████████▏  417 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-llama3.3
-  download_time_sec: 718.68
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: phi4-mini-reasoning:3.8b-q8_0
+  Status: success
+  Download Time (sec): 89.5
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 28.1
+  Log Tail:
+    pulling fa8235e5b48f: 100% ▕██████████████████▏ 1.1 KB                         [K
+    pulling a6d0d5fd0e16: 100% ▕██████████████████▏  483 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-gemma2
-  download_time_sec: 121.44
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: phi4-reasoning:14b-plus-q4_K_M
+  Status: success
+  Download Time (sec): 197.22
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 23.86
+  Log Tail:
+    pulling 45a1c652dddc: 100% ▕██████████████████▏   82 B                         [K
+    pulling e974dd591b89: 100% ▕██████████████████▏  560 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-gemma3:4b-it-q8_0
-  download_time_sec: 92.99
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: qwen3:0.6b
+  Status: success
+  Download Time (sec): 11.07
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 34.63
+  Log Tail:
+    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
+    pulling b0830f4ff6a0: 100% ▕██████████████████▏  490 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-phi3.5
-  download_time_sec: 47.47
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: qwen3:1.7b
+  Status: success
+  Download Time (sec): 26.61
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 35.9
+  Log Tail:
+    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
+    pulling 517ccaff02fe: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-phi4
-  download_time_sec: 178.33
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: qwen3:14b-q4_K_M
+  Status: success
+  Download Time (sec): 0.34
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 38.34
+  Log Tail:
+    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
+    pulling 78b3b822087d: 100% ▕██████████████████▏  488 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-phi4-mini:3.8b-q4_K_M
-  download_time_sec: 49.25
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: qwen3:30b-a3b
+  Status: success
+  Download Time (sec): 316.01
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 74.5
+  Log Tail:
+    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
+    pulling d4b865b4a92d: 100% ▕██████████████████▏  494 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-phi4-mini:3.8b-q8_0
-  download_time_sec: 73.79
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: qwen3:32b-q4_K_M
+  Status: success
+  Download Time (sec): 368.12
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 57.15
+  Log Tail:
+    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
+    pulling afdf5c7585b3: 100% ▕██████████████████▏  488 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-deepseek-r1:7b-qwen-distill-q4_K_M
-  download_time_sec: 0.3
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: qwen3:4b
+  Status: success
+  Download Time (sec): 90.09
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 38.34
+  Log Tail:
+    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
+    pulling 5efd52d6d9f2: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-deepseek-r1:8b-llama-distill-q4_K_M
-  download_time_sec: 0.29
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
+Model: qwen3:8b-q4_K_M
+  Status: success
+  Download Time (sec): 0.37
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 38.34
+  Log Tail:
+    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
+    pulling 05a61d37b084: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
-mistral:7b-instruct-q4_K_M
-  download_time_sec: 79.64
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-mistral-small3.1
-  download_time_sec: 276.65
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-granite3-dense:8b-instruct-q4_K_M
-  download_time_sec: 93.83
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-granite3.1-dense:8b-instruct-q4_K_M
-  download_time_sec: 142.79
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-granite3.1-moe:3b-instruct-q8_0
-  download_time_sec: 66.66
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-granite3.2-vision:2b-fp16
-  download_time_sec: 112.95
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-granite3.2-vision:2b-q8_0
-  download_time_sec: 51.43
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-athene-v2
-  download_time_sec: 0.4
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-aya-expanse:8b-q4_K_S
-  download_time_sec: 0.41
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-cogito
-  download_time_sec: 0.65
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-command-r
-  download_time_sec: 0.28
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-command-r7b:7b-12-2024-q4_K_M
-  download_time_sec: 0.3
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-deepcoder
-  download_time_sec: 0.39
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-dolphin3:8b-llama3.1-q4_K_M
-  download_time_sec: 84.86
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-exaone3.5:7.8b-instruct-q4_K_M
-  download_time_sec: 186.2
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-falcon
-  download_time_sec: 80.0
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-falcon3:7b-instruct-q4_K_M
-  download_time_sec: 209.3
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-glm4:9b-chat-q4_K_M
-  download_time_sec: 232.07
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-hermes3:8b-llama3.1-q3_K_M
-  download_time_sec: 77.73
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-internlm2:7b-chat-1m-v2.5-q4_K_M
-  download_time_sec: 82.74
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-marco-o1:7b-q4_K_M
-  download_time_sec: 84.7
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-mixtral
-  download_time_sec: 446.32
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-nemotron
-  download_time_sec: 716.4
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-nemotron-mini
-  download_time_sec: 49.99
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-olmo2:7b-1124-instruct-q4_K_M
-  download_time_sec: 178.62
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-openthinker:7b-q4_K_M
-  download_time_sec: 99.74
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-qwen2.5:7b-instruct-q4_K_M
-  download_time_sec: 154.47
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-qwq
-  download_time_sec: 524.93
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-reflection
-  download_time_sec: 729.53
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-sailor2:8b-chat-q4_K_M
-  download_time_sec: 98.69
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-smallthinker:3b-preview-q8_0
-  download_time_sec: 74.17
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-smollm2
-  download_time_sec: 39.83
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-solar-pro
-  download_time_sec: 257.16
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-tulu3:8b-q4_K_M
-  download_time_sec: 95.1
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-vicuna
-  download_time_sec: 71.58
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
-wizardlm
-  download_time_sec: 0.27
-  status: failed
-  progress: 0
-  size_gb_estimate: 0.0
-  log_tail: ['\x1b[?2026h\x1b[?25l\x1b[1Gpulling manifest ⠋ \x1b[K\x1b[?25h\x1b[?2026l\x1b[?2026h\x1b[?25l\x1b[1Gpulling manifest ⠙ \x1b[K\x1b[?25h\x1b[?2026l\x1b[?2026h\x1b[?25l\x1b[1Gpulling manifest \x1b[K\x1b[?25h\x1b[?2026l\n', 'Error: pull model manifest: file does not exist\n']
-
-yi
-  download_time_sec: 67.15
-  status: success
-  progress: 100
-  size_gb_estimate: 0.0
-  log_tail: ['verifying sha256 digest \x1b[K\n', 'writing manifest \x1b[K\n', 'success \x1b[K\x1b[?25h\x1b[?2026l\n']
-
+=====================================================
+Summary:
+  Successful: 12
+  Failed:     0
+  Timed Out:  0
+  Total Attempts: 12
+=====================================================

@@ -1,551 +1,158 @@
 {
-  "llama2": {
-    "download_time_sec": 57.53,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
+  "granite3.3": {
+    "download_time_sec": 149.09,
+    "final_progress_%": 100,
     "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "llama3.1:8b-instruct-q4_K_M": {
-    "download_time_sec": 87.89,
+      "pulling 4a99a6dd617d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
+      "pulling 122661774644: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  417 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 32.71
   },
-  "llama3.2:3b-instruct-q8_0": {
-    "download_time_sec": 69.46,
+  "granite3.3:2b": {
+    "download_time_sec": 29.62,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 4a99a6dd617d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
+      "pulling f9ed27df66e9: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  417 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 34.15
   },
-  "llama3.2:3b-text-fp16": {
-    "download_time_sec": 120.24,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "llama3.3": {
-    "download_time_sec": 718.68,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "gemma2": {
-    "download_time_sec": 121.44,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "gemma3:4b-it-q8_0": {
-    "download_time_sec": 92.99,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "phi3.5": {
-    "download_time_sec": 47.47,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "phi4": {
-    "download_time_sec": 178.33,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "phi4-mini:3.8b-q4_K_M": {
-    "download_time_sec": 49.25,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "phi4-mini:3.8b-q8_0": {
-    "download_time_sec": 73.79,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "deepseek-r1:7b-qwen-distill-q4_K_M": {
+  "granite3.3:8b": {
     "download_time_sec": 0.3,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 4a99a6dd617d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
+      "pulling 122661774644: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  417 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 34.15
   },
-  "deepseek-r1:8b-llama-distill-q4_K_M": {
-    "download_time_sec": 0.29,
+  "phi4-mini-reasoning:3.8b-q8_0": {
+    "download_time_sec": 89.5,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling fa8235e5b48f: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f 1.1 KB                         \u001b[K",
+      "pulling a6d0d5fd0e16: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  483 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 28.1
   },
-  "mistral:7b-instruct-q4_K_M": {
-    "download_time_sec": 79.64,
+  "phi4-reasoning:14b-plus-q4_K_M": {
+    "download_time_sec": 197.22,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 45a1c652dddc: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   82 B                         \u001b[K",
+      "pulling e974dd591b89: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  560 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 23.86
   },
-  "mistral-small3.1": {
-    "download_time_sec": 276.65,
+  "qwen3:0.6b": {
+    "download_time_sec": 11.07,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
+      "pulling b0830f4ff6a0: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  490 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 34.63
   },
-  "granite3-dense:8b-instruct-q4_K_M": {
-    "download_time_sec": 93.83,
+  "qwen3:1.7b": {
+    "download_time_sec": 26.61,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
+      "pulling 517ccaff02fe: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 35.9
   },
-  "granite3.1-dense:8b-instruct-q4_K_M": {
-    "download_time_sec": 142.79,
+  "qwen3:14b-q4_K_M": {
+    "download_time_sec": 0.34,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
+      "pulling 78b3b822087d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  488 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 38.34
   },
-  "granite3.1-moe:3b-instruct-q8_0": {
-    "download_time_sec": 66.66,
+  "qwen3:30b-a3b": {
+    "download_time_sec": 316.01,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
+      "pulling d4b865b4a92d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  494 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 74.5
   },
-  "granite3.2-vision:2b-fp16": {
-    "download_time_sec": 112.95,
+  "qwen3:32b-q4_K_M": {
+    "download_time_sec": 368.12,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
+      "pulling afdf5c7585b3: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  488 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 57.15
   },
-  "granite3.2-vision:2b-q8_0": {
-    "download_time_sec": 51.43,
+  "qwen3:4b": {
+    "download_time_sec": 90.09,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
+      "pulling 5efd52d6d9f2: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 38.34
   },
-  "athene-v2": {
-    "download_time_sec": 0.4,
+  "qwen3:8b-q4_K_M": {
+    "download_time_sec": 0.37,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
+      "pulling 05a61d37b084: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
     "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "aya-expanse:8b-q4_K_S": {
-    "download_time_sec": 0.41,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "cogito": {
-    "download_time_sec": 0.65,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "command-r": {
-    "download_time_sec": 0.28,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "command-r7b:7b-12-2024-q4_K_M": {
-    "download_time_sec": 0.3,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "deepcoder": {
-    "download_time_sec": 0.39,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "dolphin3:8b-llama3.1-q4_K_M": {
-    "download_time_sec": 84.86,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "exaone3.5:7.8b-instruct-q4_K_M": {
-    "download_time_sec": 186.2,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "falcon": {
-    "download_time_sec": 80.0,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "falcon3:7b-instruct-q4_K_M": {
-    "download_time_sec": 209.3,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "glm4:9b-chat-q4_K_M": {
-    "download_time_sec": 232.07,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "hermes3:8b-llama3.1-q3_K_M": {
-    "download_time_sec": 77.73,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "internlm2:7b-chat-1m-v2.5-q4_K_M": {
-    "download_time_sec": 82.74,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "marco-o1:7b-q4_K_M": {
-    "download_time_sec": 84.7,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "mixtral": {
-    "download_time_sec": 446.32,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "nemotron": {
-    "download_time_sec": 716.4,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "nemotron-mini": {
-    "download_time_sec": 49.99,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "olmo2:7b-1124-instruct-q4_K_M": {
-    "download_time_sec": 178.62,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "openthinker:7b-q4_K_M": {
-    "download_time_sec": 99.74,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "qwen2.5:7b-instruct-q4_K_M": {
-    "download_time_sec": 154.47,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "qwq": {
-    "download_time_sec": 524.93,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "reflection": {
-    "download_time_sec": 729.53,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "sailor2:8b-chat-q4_K_M": {
-    "download_time_sec": 98.69,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "smallthinker:3b-preview-q8_0": {
-    "download_time_sec": 74.17,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "smollm2": {
-    "download_time_sec": 39.83,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "solar-pro": {
-    "download_time_sec": 257.16,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "tulu3:8b-q4_K_M": {
-    "download_time_sec": 95.1,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "vicuna": {
-    "download_time_sec": 71.58,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
-  },
-  "wizardlm": {
-    "download_time_sec": 0.27,
-    "status": "failed",
-    "progress": 0,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u280b \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u2819 \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u001b[K\u001b[?25h\u001b[?2026l\n",
-      "Error: pull model manifest: file does not exist\n"
-    ]
-  },
-  "yi": {
-    "download_time_sec": 67.15,
-    "status": "success",
-    "progress": 100,
-    "size_gb_estimate": 0.0,
-    "log_tail": [
-      "verifying sha256 digest \u001b[K\n",
-      "writing manifest \u001b[K\n",
-      "success \u001b[K\u001b[?25h\u001b[?2026l\n"
-    ]
+    "total_blob_size_gb": 38.34
   }
 }
