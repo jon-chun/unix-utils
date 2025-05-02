@@ -1,11 +1,271 @@
-Ollama Model Download Report - 2025-05-01 19:05:20
+Ollama Model Download Report - 2025-05-02 10:44:38
 =====================================================
+
+Model: athene-v2
+  Status: success
+  Download Time (sec): 880.1
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 249.89
+  Log Tail:
+    pulling 212eb82a7c73: 100% ▕██████████████████▏ 6.8 KB                         [K
+    pulling b9e3aadd1e18: 100% ▕██████████████████▏  488 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: aya-expanse:8b-q4_K_S
+  Status: success
+  Download Time (sec): 90.01
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 254.39
+  Log Tail:
+    pulling 36b9655abe6a: 100% ▕██████████████████▏   81 B                         [K
+    pulling 780a6f4e0ff0: 100% ▕██████████████████▏  569 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: cogito
+  Status: success
+  Download Time (sec): 88.46
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 258.97
+  Log Tail:
+    pulling fcc5a6bec9da: 100% ▕██████████████████▏ 7.7 KB                         [K
+    pulling 18fe4f0367c0: 100% ▕██████████████████▏  413 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: command-r
+  Status: success
+  Download Time (sec): 330.78
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 276.41
+  Log Tail:
+    pulling 36b9655abe6a: 100% ▕██████████████████▏   81 B                         [K
+    pulling 8e63f21e12fb: 100% ▕██████████████████▏  568 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: command-r7b:7b-12-2024-q4_K_M
+  Status: success
+  Download Time (sec): 198.14
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 281.12
+  Log Tail:
+    pulling d8455b5dce0b: 100% ▕██████████████████▏  110 B                         [K
+    pulling 574fdc7616e8: 100% ▕██████████████████▏  491 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: deepcoder
+  Status: success
+  Download Time (sec): 247.71
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 289.49
+  Log Tail:
+    pulling ceaa5f78afb8: 100% ▕██████████████████▏   33 B                         [K
+    pulling 99307daad14c: 100% ▕██████████████████▏  488 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: deepseek-r1:7b-qwen-distill-q4_K_M
+  Status: success
+  Download Time (sec): 105.08
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 162.07
+  Log Tail:
+    pulling f4d24e9138dd: 100% ▕██████████████████▏  148 B                         [K
+    pulling 40fb844194b2: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: deepseek-r1:8b-llama-distill-q4_K_M
+  Status: success
+  Download Time (sec): 90.4
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 166.66
+  Log Tail:
+    pulling f4d24e9138dd: 100% ▕██████████████████▏  148 B                         [K
+    pulling 0cb05c6e4e02: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: dolphin3:8b-llama3.1-q4_K_M
+  Status: success
+  Download Time (sec): 104.84
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 294.07
+  Log Tail:
+    pulling f02dd72bb242: 100% ▕██████████████████▏   59 B                         [K
+    pulling 9ca2294ee988: 100% ▕██████████████████▏  561 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: exaone3.5:7.8b-instruct-q4_K_M
+  Status: success
+  Download Time (sec): 90.58
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 298.51
+  Log Tail:
+    pulling a64d9e642d7b: 100% ▕██████████████████▏   62 B                         [K
+    pulling 339c5d906976: 100% ▕██████████████████▏  563 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: falcon
+  Status: success
+  Download Time (sec): 78.52
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 302.44
+  Log Tail:
+    pulling 0644cce03f93: 100% ▕██████████████████▏   31 B                         [K
+    pulling 9ce7398869ad: 100% ▕██████████████████▏  382 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: falcon3:7b-instruct-q4_K_M
+  Status: success
+  Download Time (sec): 84.04
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 306.69
+  Log Tail:
+    pulling 35e31ed4c388: 100% ▕██████████████████▏  101 B                         [K
+    pulling acb75345e14b: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: gemma2
+  Status: success
+  Download Time (sec): 111.45
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 136.49
+  Log Tail:
+    pulling 2490e7468436: 100% ▕██████████████████▏   65 B                         [K
+    pulling 10aa81da732e: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: gemma3:4b-it-q8_0
+  Status: success
+  Download Time (sec): 100.2
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 141.13
+  Log Tail:
+    pulling 3116c5225075: 100% ▕██████████████████▏   77 B                         [K
+    pulling f9df1f6a588d: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: glm4:9b-chat-q4_K_M
+  Status: success
+  Download Time (sec): 114.98
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 312.51
+  Log Tail:
+    pulling 4134f3eb0516: 100% ▕██████████████████▏   81 B                         [K
+    pulling 2f8494945860: 100% ▕██████████████████▏  491 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: granite3-dense:8b-instruct-q4_K_M
+  Status: success
+  Download Time (sec): 89.05
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 189.75
+  Log Tail:
+    pulling 31ad3abb7dce: 100% ▕██████████████████▏   63 B                         [K
+    pulling d77201a4f430: 100% ▕██████████████████▏  417 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: granite3.1-dense:8b-instruct-q4_K_M
+  Status: success
+  Download Time (sec): 130.8
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 194.4
+  Log Tail:
+    pulling 492069a62c25: 100% ▕██████████████████▏  11 KB                         [K
+    pulling f9cd69f4077d: 100% ▕██████████████████▏  491 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: granite3.1-moe:3b-instruct-q8_0
+  Status: success
+  Download Time (sec): 80.7
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 197.67
+  Log Tail:
+    pulling 492069a62c25: 100% ▕██████████████████▏  11 KB                         [K
+    pulling 0a3ae7e2b3bf: 100% ▕██████████████████▏  495 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: granite3.2-vision:2b-fp16
+  Status: success
+  Download Time (sec): 118.98
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 203.23
+  Log Tail:
+    pulling e371ed40cc78: 100% ▕██████████████████▏   34 B                         [K
+    pulling 827e818f102f: 100% ▕██████████████████▏  643 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: granite3.2-vision:2b-q8_0
+  Status: success
+  Download Time (sec): 55.26
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 205.73
+  Log Tail:
+    pulling e371ed40cc78: 100% ▕██████████████████▏   34 B                         [K
+    pulling 6aa6aed48881: 100% ▕██████████████████▏  644 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
 
 Model: granite3.3
   Status: success
-  Download Time (sec): 149.09
+  Download Time (sec): 0.41
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 32.71
+  Estimated Total Blob Size (GB): 205.73
   Log Tail:
     pulling 4a99a6dd617d: 100% ▕██████████████████▏  11 KB                         [K
     pulling 122661774644: 100% ▕██████████████████▏  417 B                         [K
@@ -14,144 +274,388 @@ Model: granite3.3
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: granite3.3:2b
+Model: hermes3:8b-llama3.1-q3_K_M
   Status: success
-  Download Time (sec): 29.62
+  Download Time (sec): 108.74
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 34.15
+  Estimated Total Blob Size (GB): 316.26
   Log Tail:
-    pulling 4a99a6dd617d: 100% ▕██████████████████▏  11 KB                         [K
-    pulling f9ed27df66e9: 100% ▕██████████████████▏  417 B                         [K
+    pulling f02dd72bb242: 100% ▕██████████████████▏   59 B                         [K
+    pulling 6dbd0eb7b04f: 100% ▕██████████████████▏  487 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: granite3.3:8b
+Model: internlm2:7b-chat-1m-v2.5-q4_K_M
   Status: success
-  Download Time (sec): 0.3
+  Download Time (sec): 91.22
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 34.15
+  Estimated Total Blob Size (GB): 320.65
   Log Tail:
-    pulling 4a99a6dd617d: 100% ▕██████████████████▏  11 KB                         [K
-    pulling 122661774644: 100% ▕██████████████████▏  417 B                         [K
+    pulling f02dd72bb242: 100% ▕██████████████████▏   59 B                         [K
+    pulling 8105ad17b915: 100% ▕██████████████████▏  569 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: phi4-mini-reasoning:3.8b-q8_0
+Model: llama2
   Status: success
-  Download Time (sec): 89.5
+  Download Time (sec): 81.66
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 28.1
+  Estimated Total Blob Size (GB): 78.06
   Log Tail:
-    pulling fa8235e5b48f: 100% ▕██████████████████▏ 1.1 KB                         [K
-    pulling a6d0d5fd0e16: 100% ▕██████████████████▏  483 B                         [K
+    pulling fa304d675061: 100% ▕██████████████████▏   91 B                         [K
+    pulling 42ba7f8a01dd: 100% ▕██████████████████▏  557 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: phi4-reasoning:14b-plus-q4_K_M
+Model: llama3.1:8b-instruct-q4_K_M
   Status: success
-  Download Time (sec): 197.22
+  Download Time (sec): 92.13
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 23.86
+  Estimated Total Blob Size (GB): 82.64
+  Log Tail:
+    pulling 56bb8bd477a5: 100% ▕██████████████████▏   96 B                         [K
+    pulling 455f34728c9b: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: llama3.2:3b-instruct-q8_0
+  Status: success
+  Download Time (sec): 66.39
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 85.83
+  Log Tail:
+    pulling 56bb8bd477a5: 100% ▕██████████████████▏   96 B                         [K
+    pulling eb854b581f54: 100% ▕██████████████████▏  559 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: llama3.2:3b-text-fp16
+  Status: success
+  Download Time (sec): 116.41
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 91.82
+  Log Tail:
+    pulling a70ff7e570d9: 100% ▕██████████████████▏ 6.0 KB                         [K
+    pulling 8668fed3529f: 100% ▕██████████████████▏  410 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: llama3.3
+  Status: success
+  Download Time (sec): 791.58
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 131.42
+  Log Tail:
+    pulling 56bb8bd477a5: 100% ▕██████████████████▏   96 B                         [K
+    pulling c7091aa45e9b: 100% ▕██████████████████▏  562 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: marco-o1:7b-q4_K_M
+  Status: success
+  Download Time (sec): 92.52
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 325.01
+  Log Tail:
+    pulling 832dd9e00a68: 100% ▕██████████████████▏  11 KB                         [K
+    pulling 6c599f44ea36: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: mistral-small3.1
+  Status: success
+  Download Time (sec): 414.29
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 185.15
+  Log Tail:
+    pulling a00920c28dfd: 100% ▕██████████████████▏   17 B                         [K
+    pulling 9b6ac0d4e97e: 100% ▕██████████████████▏  494 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: mistral:7b-instruct-q4_K_M
+  Status: success
+  Download Time (sec): 92.95
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 170.73
+  Log Tail:
+    pulling ed11eda7790d: 100% ▕██████████████████▏   30 B                         [K
+    pulling 126aeb334a49: 100% ▕██████████████████▏  485 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: mixtral
+  Status: success
+  Download Time (sec): 563.59
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 349.63
+  Log Tail:
+    pulling ed11eda7790d: 100% ▕██████████████████▏   30 B                         [K
+    pulling deae14c19dac: 100% ▕██████████████████▏  486 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: nemotron
+  Status: success
+  Download Time (sec): 782.46
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 389.23
+  Log Tail:
+    pulling 56bb8bd477a5: 100% ▕██████████████████▏   96 B                         [K
+    pulling 2b4e98e1c22e: 100% ▕██████████████████▏  562 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: nemotron-mini
+  Status: success
+  Download Time (sec): 79.79
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 391.75
+  Log Tail:
+    pulling 3436c20529fb: 100% ▕██████████████████▏  14 KB                         [K
+    pulling 505fc75543c6: 100% ▕██████████████████▏  419 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: olmo2:7b-1124-instruct-q4_K_M
+  Status: success
+  Download Time (sec): 84.38
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 395.91
+  Log Tail:
+    pulling 43070e2d4e53: 100% ▕██████████████████▏  11 KB                         [K
+    pulling d3d81dcf3ed1: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: openthinker:7b-q4_K_M
+  Status: success
+  Download Time (sec): 83.78
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 400.27
+  Log Tail:
+    pulling 76a95b21160f: 100% ▕██████████████████▏  10 KB                         [K
+    pulling 8b46abd0655a: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: phi3.5
+  Status: success
+  Download Time (sec): 51.6
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 143.16
+  Log Tail:
+    pulling 45ac4c662a77: 100% ▕██████████████████▏   60 B                         [K
+    pulling 0611867ea67b: 100% ▕██████████████████▏  409 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: phi4
+  Status: success
+  Download Time (sec): 158.55
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 151.59
   Log Tail:
     pulling 45a1c652dddc: 100% ▕██████████████████▏   82 B                         [K
-    pulling e974dd591b89: 100% ▕██████████████████▏  560 B                         [K
+    pulling f5d6f49c6477: 100% ▕██████████████████▏  486 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: qwen3:0.6b
+Model: phi4-mini:3.8b-q4_K_M
   Status: success
-  Download Time (sec): 11.07
+  Download Time (sec): 50.14
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 34.63
+  Estimated Total Blob Size (GB): 153.91
   Log Tail:
-    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
-    pulling b0830f4ff6a0: 100% ▕██████████████████▏  490 B                         [K
+    pulling fa8235e5b48f: 100% ▕██████████████████▏ 1.1 KB                         [K
+    pulling 8c2539a423c4: 100% ▕██████████████████▏  411 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: qwen3:1.7b
+Model: phi4-mini:3.8b-q8_0
   Status: success
-  Download Time (sec): 26.61
+  Download Time (sec): 77.87
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 35.9
+  Estimated Total Blob Size (GB): 157.71
   Log Tail:
-    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
-    pulling 517ccaff02fe: 100% ▕██████████████████▏  487 B                         [K
+    pulling fa8235e5b48f: 100% ▕██████████████████▏ 1.1 KB                         [K
+    pulling 4a616e0563f4: 100% ▕██████████████████▏  409 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: qwen3:14b-q4_K_M
+Model: qwen2.5:7b-instruct-q4_K_M
   Status: success
-  Download Time (sec): 0.34
+  Download Time (sec): 85.05
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 38.34
+  Estimated Total Blob Size (GB): 404.63
   Log Tail:
-    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
-    pulling 78b3b822087d: 100% ▕██████████████████▏  488 B                         [K
+    pulling 832dd9e00a68: 100% ▕██████████████████▏  11 KB                         [K
+    pulling 2f15b3218f05: 100% ▕██████████████████▏  487 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: qwen3:30b-a3b
+Model: qwq
   Status: success
-  Download Time (sec): 316.01
+  Download Time (sec): 446.8
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 74.5
+  Estimated Total Blob Size (GB): 423.12
   Log Tail:
-    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
-    pulling d4b865b4a92d: 100% ▕██████████████████▏  494 B                         [K
+    pulling e5229acc2492: 100% ▕██████████████████▏  120 B                         [K
+    pulling 1972e9972e2e: 100% ▕██████████████████▏  488 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: qwen3:32b-q4_K_M
+Model: reflection
   Status: success
-  Download Time (sec): 368.12
+  Download Time (sec): 689.47
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 57.15
+  Estimated Total Blob Size (GB): 460.35
   Log Tail:
-    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
-    pulling afdf5c7585b3: 100% ▕██████████████████▏  488 B                         [K
+    pulling 290615e13f21: 100% ▕██████████████████▏  127 B                         [K
+    pulling 95488584d666: 100% ▕██████████████████▏  560 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: qwen3:4b
+Model: sailor2:8b-chat-q4_K_M
   Status: success
-  Download Time (sec): 90.09
+  Download Time (sec): 145.99
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 38.34
+  Estimated Total Blob Size (GB): 465.23
   Log Tail:
-    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
-    pulling 5efd52d6d9f2: 100% ▕██████████████████▏  487 B                         [K
+    pulling f02dd72bb242: 100% ▕██████████████████▏   59 B                         [K
+    pulling c0cb20692c07: 100% ▕██████████████████▏  487 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
 --------------------------------------------------
 
-Model: qwen3:8b-q4_K_M
+Model: smallthinker:3b-preview-q8_0
   Status: success
-  Download Time (sec): 0.37
+  Download Time (sec): 103.23
   Final Progress (%): 100
-  Estimated Total Blob Size (GB): 38.34
+  Estimated Total Blob Size (GB): 468.6
   Log Tail:
-    pulling cff3f395ef37: 100% ▕██████████████████▏  120 B                         [K
-    pulling 05a61d37b084: 100% ▕██████████████████▏  487 B                         [K
+    pulling cf0bf78141c7: 100% ▕██████████████████▏ 7.4 KB                         [K
+    pulling d6c8c47526b9: 100% ▕██████████████████▏  485 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: smollm2
+  Status: success
+  Download Time (sec): 37.52
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 470.29
+  Log Tail:
+    pulling f02dd72bb242: 100% ▕██████████████████▏   59 B                         [K
+    pulling 6c6b9193c417: 100% ▕██████████████████▏  559 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: solar-pro
+  Status: success
+  Download Time (sec): 286.12
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 482.69
+  Log Tail:
+    pulling f02dd72bb242: 100% ▕██████████████████▏   59 B                         [K
+    pulling d071202116d7: 100% ▕██████████████████▏  488 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: tulu3:8b-q4_K_M
+  Status: success
+  Download Time (sec): 91.35
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 487.27
+  Log Tail:
+    pulling a5212ead1239: 100% ▕██████████████████▏ 7.6 KB                         [K
+    pulling 7c15a88f9430: 100% ▕██████████████████▏  487 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: vicuna
+  Status: success
+  Download Time (sec): 74.57
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 490.84
+  Log Tail:
+    pulling d14264189a8a: 100% ▕██████████████████▏   31 B                         [K
+    pulling a7c828d25ac8: 100% ▕██████████████████▏  455 B                         [K
+    verifying sha256 digest [K
+    writing manifest [K
+    success [K[?25h[?2026l
+--------------------------------------------------
+
+Model: wizardlm
+  Status: failed (code: 1)
+  Download Time (sec): 0.29
+  Final Progress (%): 0
+  Estimated Total Blob Size (GB): 490.84
+  Log Tail:
+    [?2026h[?25l[1Gpulling manifest ⠋ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest ⠙ [K[?25h[?2026l[?2026h[?25l[1Gpulling manifest [K[?25h[?2026l
+    Error: pull model manifest: file does not exist
+--------------------------------------------------
+
+Model: yi
+  Status: success
+  Download Time (sec): 76.19
+  Final Progress (%): 100
+  Estimated Total Blob Size (GB): 494.08
+  Log Tail:
+    pulling f02dd72bb242: 100% ▕██████████████████▏   59 B                         [K
+    pulling 974060c255fa: 100% ▕██████████████████▏  483 B                         [K
     verifying sha256 digest [K
     writing manifest [K
     success [K[?25h[?2026l
@@ -159,8 +663,8 @@ Model: qwen3:8b-q4_K_M
 
 =====================================================
 Summary:
-  Successful: 12
-  Failed:     0
+  Successful: 50
+  Failed:     1
   Timed Out:  0
-  Total Attempts: 12
+  Total Attempts This Run: 51
 =====================================================

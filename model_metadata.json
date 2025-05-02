@@ -1,6 +1,266 @@
 {
+  "athene-v2": {
+    "download_time_sec": 880.1,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 212eb82a7c73: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f 6.8 KB                         \u001b[K",
+      "pulling b9e3aadd1e18: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  488 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 249.89
+  },
+  "aya-expanse:8b-q4_K_S": {
+    "download_time_sec": 90.01,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 36b9655abe6a: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   81 B                         \u001b[K",
+      "pulling 780a6f4e0ff0: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  569 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 254.39
+  },
+  "cogito": {
+    "download_time_sec": 88.46,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling fcc5a6bec9da: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f 7.7 KB                         \u001b[K",
+      "pulling 18fe4f0367c0: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  413 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 258.97
+  },
+  "command-r": {
+    "download_time_sec": 330.78,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 36b9655abe6a: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   81 B                         \u001b[K",
+      "pulling 8e63f21e12fb: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  568 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 276.41
+  },
+  "command-r7b:7b-12-2024-q4_K_M": {
+    "download_time_sec": 198.14,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling d8455b5dce0b: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  110 B                         \u001b[K",
+      "pulling 574fdc7616e8: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  491 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 281.12
+  },
+  "deepcoder": {
+    "download_time_sec": 247.71,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling ceaa5f78afb8: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   33 B                         \u001b[K",
+      "pulling 99307daad14c: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  488 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 289.49
+  },
+  "deepseek-r1:7b-qwen-distill-q4_K_M": {
+    "download_time_sec": 105.08,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling f4d24e9138dd: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  148 B                         \u001b[K",
+      "pulling 40fb844194b2: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 162.07
+  },
+  "deepseek-r1:8b-llama-distill-q4_K_M": {
+    "download_time_sec": 90.4,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling f4d24e9138dd: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  148 B                         \u001b[K",
+      "pulling 0cb05c6e4e02: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 166.66
+  },
+  "dolphin3:8b-llama3.1-q4_K_M": {
+    "download_time_sec": 104.84,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling f02dd72bb242: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   59 B                         \u001b[K",
+      "pulling 9ca2294ee988: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  561 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 294.07
+  },
+  "exaone3.5:7.8b-instruct-q4_K_M": {
+    "download_time_sec": 90.58,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling a64d9e642d7b: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   62 B                         \u001b[K",
+      "pulling 339c5d906976: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  563 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 298.51
+  },
+  "falcon": {
+    "download_time_sec": 78.52,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 0644cce03f93: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   31 B                         \u001b[K",
+      "pulling 9ce7398869ad: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  382 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 302.44
+  },
+  "falcon3:7b-instruct-q4_K_M": {
+    "download_time_sec": 84.04,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 35e31ed4c388: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  101 B                         \u001b[K",
+      "pulling acb75345e14b: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 306.69
+  },
+  "gemma2": {
+    "download_time_sec": 111.45,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 2490e7468436: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   65 B                         \u001b[K",
+      "pulling 10aa81da732e: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 136.49
+  },
+  "gemma3:4b-it-q8_0": {
+    "download_time_sec": 100.2,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 3116c5225075: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   77 B                         \u001b[K",
+      "pulling f9df1f6a588d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 141.13
+  },
+  "glm4:9b-chat-q4_K_M": {
+    "download_time_sec": 114.98,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 4134f3eb0516: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   81 B                         \u001b[K",
+      "pulling 2f8494945860: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  491 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 312.51
+  },
+  "granite3-dense:8b-instruct-q4_K_M": {
+    "download_time_sec": 89.05,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 31ad3abb7dce: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   63 B                         \u001b[K",
+      "pulling d77201a4f430: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  417 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 189.75
+  },
+  "granite3.1-dense:8b-instruct-q4_K_M": {
+    "download_time_sec": 130.8,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 492069a62c25: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
+      "pulling f9cd69f4077d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  491 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 194.4
+  },
+  "granite3.1-moe:3b-instruct-q8_0": {
+    "download_time_sec": 80.7,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 492069a62c25: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
+      "pulling 0a3ae7e2b3bf: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  495 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 197.67
+  },
+  "granite3.2-vision:2b-fp16": {
+    "download_time_sec": 118.98,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling e371ed40cc78: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   34 B                         \u001b[K",
+      "pulling 827e818f102f: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  643 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 203.23
+  },
+  "granite3.2-vision:2b-q8_0": {
+    "download_time_sec": 55.26,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling e371ed40cc78: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   34 B                         \u001b[K",
+      "pulling 6aa6aed48881: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  644 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 205.73
+  },
   "granite3.3": {
-    "download_time_sec": 149.09,
+    "download_time_sec": 0.41,
     "final_progress_%": 100,
     "log_tail": [
       "pulling 4a99a6dd617d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
@@ -10,149 +270,393 @@
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 32.71
+    "total_blob_size_gb": 205.73
   },
-  "granite3.3:2b": {
-    "download_time_sec": 29.62,
+  "hermes3:8b-llama3.1-q3_K_M": {
+    "download_time_sec": 108.74,
     "final_progress_%": 100,
     "log_tail": [
-      "pulling 4a99a6dd617d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
-      "pulling f9ed27df66e9: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  417 B                         \u001b[K",
+      "pulling f02dd72bb242: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   59 B                         \u001b[K",
+      "pulling 6dbd0eb7b04f: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 34.15
+    "total_blob_size_gb": 316.26
   },
-  "granite3.3:8b": {
-    "download_time_sec": 0.3,
+  "internlm2:7b-chat-1m-v2.5-q4_K_M": {
+    "download_time_sec": 91.22,
     "final_progress_%": 100,
     "log_tail": [
-      "pulling 4a99a6dd617d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
-      "pulling 122661774644: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  417 B                         \u001b[K",
+      "pulling f02dd72bb242: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   59 B                         \u001b[K",
+      "pulling 8105ad17b915: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  569 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 34.15
+    "total_blob_size_gb": 320.65
   },
-  "phi4-mini-reasoning:3.8b-q8_0": {
-    "download_time_sec": 89.5,
+  "llama2": {
+    "download_time_sec": 81.66,
     "final_progress_%": 100,
     "log_tail": [
-      "pulling fa8235e5b48f: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f 1.1 KB                         \u001b[K",
-      "pulling a6d0d5fd0e16: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  483 B                         \u001b[K",
+      "pulling fa304d675061: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   91 B                         \u001b[K",
+      "pulling 42ba7f8a01dd: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  557 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 28.1
+    "total_blob_size_gb": 78.06
   },
-  "phi4-reasoning:14b-plus-q4_K_M": {
-    "download_time_sec": 197.22,
+  "llama3.1:8b-instruct-q4_K_M": {
+    "download_time_sec": 92.13,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 56bb8bd477a5: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   96 B                         \u001b[K",
+      "pulling 455f34728c9b: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 82.64
+  },
+  "llama3.2:3b-instruct-q8_0": {
+    "download_time_sec": 66.39,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 56bb8bd477a5: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   96 B                         \u001b[K",
+      "pulling eb854b581f54: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  559 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 85.83
+  },
+  "llama3.2:3b-text-fp16": {
+    "download_time_sec": 116.41,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling a70ff7e570d9: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f 6.0 KB                         \u001b[K",
+      "pulling 8668fed3529f: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  410 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 91.82
+  },
+  "llama3.3": {
+    "download_time_sec": 791.58,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 56bb8bd477a5: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   96 B                         \u001b[K",
+      "pulling c7091aa45e9b: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  562 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 131.42
+  },
+  "marco-o1:7b-q4_K_M": {
+    "download_time_sec": 92.52,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 832dd9e00a68: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
+      "pulling 6c599f44ea36: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 325.01
+  },
+  "mistral-small3.1": {
+    "download_time_sec": 414.29,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling a00920c28dfd: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   17 B                         \u001b[K",
+      "pulling 9b6ac0d4e97e: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  494 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 185.15
+  },
+  "mistral:7b-instruct-q4_K_M": {
+    "download_time_sec": 92.95,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling ed11eda7790d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   30 B                         \u001b[K",
+      "pulling 126aeb334a49: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  485 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 170.73
+  },
+  "mixtral": {
+    "download_time_sec": 563.59,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling ed11eda7790d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   30 B                         \u001b[K",
+      "pulling deae14c19dac: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  486 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 349.63
+  },
+  "nemotron": {
+    "download_time_sec": 782.46,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 56bb8bd477a5: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   96 B                         \u001b[K",
+      "pulling 2b4e98e1c22e: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  562 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 389.23
+  },
+  "nemotron-mini": {
+    "download_time_sec": 79.79,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 3436c20529fb: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  14 KB                         \u001b[K",
+      "pulling 505fc75543c6: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  419 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 391.75
+  },
+  "olmo2:7b-1124-instruct-q4_K_M": {
+    "download_time_sec": 84.38,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 43070e2d4e53: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
+      "pulling d3d81dcf3ed1: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 395.91
+  },
+  "openthinker:7b-q4_K_M": {
+    "download_time_sec": 83.78,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 76a95b21160f: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  10 KB                         \u001b[K",
+      "pulling 8b46abd0655a: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 400.27
+  },
+  "phi3.5": {
+    "download_time_sec": 51.6,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling 45ac4c662a77: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   60 B                         \u001b[K",
+      "pulling 0611867ea67b: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  409 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 143.16
+  },
+  "phi4": {
+    "download_time_sec": 158.55,
     "final_progress_%": 100,
     "log_tail": [
       "pulling 45a1c652dddc: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   82 B                         \u001b[K",
-      "pulling e974dd591b89: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  560 B                         \u001b[K",
+      "pulling f5d6f49c6477: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  486 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 23.86
+    "total_blob_size_gb": 151.59
   },
-  "qwen3:0.6b": {
-    "download_time_sec": 11.07,
+  "phi4-mini:3.8b-q4_K_M": {
+    "download_time_sec": 50.14,
     "final_progress_%": 100,
     "log_tail": [
-      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
-      "pulling b0830f4ff6a0: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  490 B                         \u001b[K",
+      "pulling fa8235e5b48f: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f 1.1 KB                         \u001b[K",
+      "pulling 8c2539a423c4: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  411 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 34.63
+    "total_blob_size_gb": 153.91
   },
-  "qwen3:1.7b": {
-    "download_time_sec": 26.61,
+  "phi4-mini:3.8b-q8_0": {
+    "download_time_sec": 77.87,
     "final_progress_%": 100,
     "log_tail": [
-      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
-      "pulling 517ccaff02fe: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "pulling fa8235e5b48f: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f 1.1 KB                         \u001b[K",
+      "pulling 4a616e0563f4: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  409 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 35.9
+    "total_blob_size_gb": 157.71
   },
-  "qwen3:14b-q4_K_M": {
-    "download_time_sec": 0.34,
+  "qwen2.5:7b-instruct-q4_K_M": {
+    "download_time_sec": 85.05,
     "final_progress_%": 100,
     "log_tail": [
-      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
-      "pulling 78b3b822087d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  488 B                         \u001b[K",
+      "pulling 832dd9e00a68: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  11 KB                         \u001b[K",
+      "pulling 2f15b3218f05: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 38.34
+    "total_blob_size_gb": 404.63
   },
-  "qwen3:30b-a3b": {
-    "download_time_sec": 316.01,
+  "qwq": {
+    "download_time_sec": 446.8,
     "final_progress_%": 100,
     "log_tail": [
-      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
-      "pulling d4b865b4a92d: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  494 B                         \u001b[K",
+      "pulling e5229acc2492: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
+      "pulling 1972e9972e2e: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  488 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 74.5
+    "total_blob_size_gb": 423.12
   },
-  "qwen3:32b-q4_K_M": {
-    "download_time_sec": 368.12,
+  "reflection": {
+    "download_time_sec": 689.47,
     "final_progress_%": 100,
     "log_tail": [
-      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
-      "pulling afdf5c7585b3: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  488 B                         \u001b[K",
+      "pulling 290615e13f21: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  127 B                         \u001b[K",
+      "pulling 95488584d666: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  560 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 57.15
+    "total_blob_size_gb": 460.35
   },
-  "qwen3:4b": {
-    "download_time_sec": 90.09,
+  "sailor2:8b-chat-q4_K_M": {
+    "download_time_sec": 145.99,
     "final_progress_%": 100,
     "log_tail": [
-      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
-      "pulling 5efd52d6d9f2: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "pulling f02dd72bb242: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   59 B                         \u001b[K",
+      "pulling c0cb20692c07: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 38.34
+    "total_blob_size_gb": 465.23
   },
-  "qwen3:8b-q4_K_M": {
-    "download_time_sec": 0.37,
+  "smallthinker:3b-preview-q8_0": {
+    "download_time_sec": 103.23,
     "final_progress_%": 100,
     "log_tail": [
-      "pulling cff3f395ef37: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  120 B                         \u001b[K",
-      "pulling 05a61d37b084: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "pulling cf0bf78141c7: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f 7.4 KB                         \u001b[K",
+      "pulling d6c8c47526b9: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  485 B                         \u001b[K",
       "verifying sha256 digest \u001b[K",
       "writing manifest \u001b[K",
       "success \u001b[K\u001b[?25h\u001b[?2026l"
     ],
     "status": "success",
-    "total_blob_size_gb": 38.34
+    "total_blob_size_gb": 468.6
+  },
+  "smollm2": {
+    "download_time_sec": 37.52,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling f02dd72bb242: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   59 B                         \u001b[K",
+      "pulling 6c6b9193c417: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  559 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 470.29
+  },
+  "solar-pro": {
+    "download_time_sec": 286.12,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling f02dd72bb242: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   59 B                         \u001b[K",
+      "pulling d071202116d7: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  488 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 482.69
+  },
+  "tulu3:8b-q4_K_M": {
+    "download_time_sec": 91.35,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling a5212ead1239: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f 7.6 KB                         \u001b[K",
+      "pulling 7c15a88f9430: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  487 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 487.27
+  },
+  "vicuna": {
+    "download_time_sec": 74.57,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling d14264189a8a: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   31 B                         \u001b[K",
+      "pulling a7c828d25ac8: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  455 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 490.84
+  },
+  "wizardlm": {
+    "download_time_sec": 0.29,
+    "final_progress_%": 0,
+    "log_tail": [
+      "\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u280b \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u2819 \u001b[K\u001b[?25h\u001b[?2026l\u001b[?2026h\u001b[?25l\u001b[1Gpulling manifest \u001b[K\u001b[?25h\u001b[?2026l",
+      "Error: pull model manifest: file does not exist"
+    ],
+    "status": "failed (code: 1)",
+    "total_blob_size_gb": 490.84
+  },
+  "yi": {
+    "download_time_sec": 76.19,
+    "final_progress_%": 100,
+    "log_tail": [
+      "pulling f02dd72bb242: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f   59 B                         \u001b[K",
+      "pulling 974060c255fa: 100% \u2595\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u258f  483 B                         \u001b[K",
+      "verifying sha256 digest \u001b[K",
+      "writing manifest \u001b[K",
+      "success \u001b[K\u001b[?25h\u001b[?2026l"
+    ],
+    "status": "success",
+    "total_blob_size_gb": 494.08
   }
 }
