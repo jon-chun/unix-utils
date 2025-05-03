@@ -190,3 +190,162 @@ sudo apt-mark hold nvidia-driver-* nvidia-container-toolkit ollama
 3. **Upgrade in a controlled window**, snapshot first, and you’ll keep your RTX 3090‑powered Ollama stack humming regardless of what Ubuntu’s next `apt upgrade` throws your way.
 
 Feel free to let me know if any step still leaves the GPU idle—there are deeper diagnostics (like checking `/proc/driver/nvidia/version` or `ldd $(which ollama) | grep cuda`) we can run if needed. Happy (stable) hacking!
+
+
+---
+
+Looking at the system information you provided, I notice you're using Ubuntu 22.04 (Jammy) with NVIDIA components and CUDA installed. This additional context helps me tailor my troubleshooting approach for your VSCode crashing issue. Let me provide step-by-step instructions to diagnose and fix the problem.
+
+# Step 1: Check for conflicts with NVIDIA drivers
+
+Based on your system output, you have multiple NVIDIA repositories configured, including some for Ubuntu 18.04 that might conflict with your current 22.04 installation:
+
+1. First, check your current NVIDIA driver:
+   ```
+   nvidia-smi
+   ```
+
+2. If you see any errors or outdated drivers, update your NVIDIA drivers through the recommended Ubuntu repository:
+   ```
+   sudo apt install nvidia-driver-535  # Use the latest recommended version
+   ```
+
+# Step 2: Fix repository duplications
+
+Your system shows several duplicate repository entries which might cause conflicts:
+
+1. Clean up duplicate Docker repositories:
+   ```
+   sudo rm /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-jammy.list
+   ```
+
+2. Clean up duplicate CUDA repositories:
+   ```
+   sudo rm /etc/apt/sources.list.d/cuda-official.list
+   ```
+
+3. Update your package lists:
+   ```
+   sudo apt update
+   ```
+
+# Step 3: Launch VSCode with diagnostics
+
+Let's gather more information about the crashes:
+
+1. Launch VSCode with verbose logging:
+   ```
+   code --verbose --log=debug
+   ```
+
+2. If it crashes, check the logs:
+   ```
+   cat ~/.config/Code/logs/*/renderer.log
+   cat ~/.config/Code/logs/*/window1/renderer.log
+   ```
+
+# Step 4: Disable GPU acceleration
+
+Given your NVIDIA setup, GPU acceleration might be causing conflicts:
+
+1. Launch VSCode with GPU acceleration disabled:
+   ```
+   code --disable-gpu
+   ```
+
+2. If this resolves the issue, make it permanent by creating/editing a custom desktop entry:
+   ```
+   mkdir -p ~/.local/share/applications
+   cp /usr/share/applications/code.desktop ~/.local/share/applications/
+   sed -i 's/Exec=\/usr\/share\/code\/code/Exec=\/usr\/share\/code\/code --disable-gpu/g' ~/.local/share/applications/code.desktop
+   ```
+
+# Step 5: Check for extension conflicts
+
+Since you're in a development environment (noticed from your conda base environment), extensions might be causing issues:
+
+1. Launch VSCode in safe mode:
+   ```
+   code --disable-extensions
+   ```
+
+2. If VSCode is stable in safe mode, identify problematic extensions:
+   - Enable extensions one by one, starting with ones related to Python, Docker, or NVIDIA/CUDA
+   - After enabling each extension, restart VSCode and test
+
+# Step 6: Update VSCode to the latest version
+
+Make sure you're using the latest VSCode version:
+
+1. Download the latest .deb package from the official website:
+   ```
+   wget -O ~/Downloads/code_latest.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+   ```
+
+2. Install it:
+   ```
+   sudo apt install ~/Downloads/code_latest.deb
+   ```
+
+# Step 7: Fix potential Electron sandbox issues
+
+Some VSCode crashes on Ubuntu are related to Electron sandbox issues:
+
+1. Create or edit the VSCode launch script:
+   ```
+   mkdir -p ~/.local/bin
+   echo '#!/bin/bash
+   /usr/bin/code --no-sandbox "$@"' > ~/.local/bin/vscode
+   chmod +x ~/.local/bin/vscode
+   ```
+
+2. Use this custom launcher:
+   ```
+   ~/.local/bin/vscode
+   ```
+
+# Step 8: Check system memory and swap
+
+Given your development environment, memory issues might be causing crashes:
+
+1. Check your available memory:
+   ```
+   free -h
+   ```
+
+2. If memory is low, increase your swap space:
+   ```
+   sudo swapoff -a
+   sudo fallocate -l 8G /swapfile
+   sudo chmod 600 /swapfile
+   sudo mkswap /swapfile
+   sudo swapon /swapfile
+   ```
+
+3. Make it permanent by adding to fstab:
+   ```
+   echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+   ```
+
+# Step 9: Reset VSCode user data as a last resort
+
+If all else fails, you can reset VSCode completely (backup your settings first):
+
+1. Back up your settings:
+   ```
+   cp -r ~/.config/Code ~/.config/Code.backup
+   ```
+
+2. Remove VSCode data:
+   ```
+   rm -rf ~/.config/Code
+   rm -rf ~/.vscode
+   ```
+
+3. Reinstall VSCode:
+   ```
+   sudo apt remove --purge code
+   sudo apt install ~/Downloads/code_latest.deb
+   ```
+
+Try these steps methodically, testing VSCode after each significant change. The most likely culprits based on your system configuration are NVIDIA driver conflicts and duplicate repository issues. If the issue persists, let me know which steps you've tried and what the results were.
