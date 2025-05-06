@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Stance Evolution & Rationale Heatmap</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        h1 { text-align: center; color: #2c3e50; }
+        .heatmap-container { margin: 20px auto; padding: 15px; background-color: #fff; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); overflow-x: auto; }
+        table { border-collapse: collapse; width: 100%; min-width: 600px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: center; min-width: 80px; }
+        th { background-color: #e9ecef; font-size: 12px; }
+        td { font-size: 11px; position: relative; }
+        .rationale-tooltip {
+            visibility: hidden;
+            width: 150px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position above the cell */
+            left: 50%;
+            margin-left: -75px; /* Use half of the width to center */
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 10px;
+        }
+        td:hover .rationale-tooltip { visibility: visible; opacity: 1; }
+        .legend { margin-top: 20px; text-align: center; font-size: 12px; }
+        .legend-color { display: inline-block; width: 15px; height: 15px; margin: 0 2px; border: 1px solid #777; vertical-align: middle;}
+        .no-data { background-color: #f0f0f0; color: #999; font-style: italic; }
+    </style>
+</head>
+<body>
+    <h1>Speaker Stance Evolution & Rationale Heatmap</h1>
+    <div class="heatmap-container">
+        <table id="evolutionHeatmap">
+            <thead>
+                <tr id="headerRow">
+                    <th>Speaker</th>
+                </tr>
+            </thead>
+            <tbody id="heatmapBody">
+            </tbody>
+        </table>
+    </div>
+    <div class="legend">
+        <strong>Sentiment Score Legend:</strong>
+        <span class="legend-color" style="background-color: #d73027;"></span> -5 to -3 (Strong Neg)
+        <span class="legend-color" style="background-color: #fc8d59;"></span> -2 to -1 (Mild Neg)
+        <span class="legend-color" style="background-color: #fee08b;"></span> 0 (Neutral)
+        <span class="legend-color" style="background-color: #91cf60;"></span> +1 to +2 (Mild Pos)
+        <span class="legend-color" style="background-color: #1a9850;"></span> +3 to +5 (Strong Pos)
+        <span class="legend-color" style="background-color: #f0f0f0;"></span> No Data
+        <br><i>Hover over cells for primary rationale.</i>
+    </div>
+
+    <script>
+        // Simplified data structure: speaker -> episode -> { sentiment, rationale_code }
+        // Rationales: GP=GeoPol, MD=MarketDisrupt, EX=Execution, NC=Negotiation, CS=Corruption, RP=Risk/Policy, AU=Austerity,
+        // FT=FiscalTool, IR=InflationRisk, TA=TaxAlternative, SC=SupplyChain, NS=NationalSecurity, AG=AgriImpact, UC=Uncertain, MP=MasterPlan, ET=ExploitableTactic, COMP=Competitiveness
+        const evolutionData = {
+            "JCal": {
+                "Ep 218": { sentiment: -2, rationale: "MD: Market Disrupt" },
+                "Ep 219": { sentiment: -4, rationale: "CS: Unpredict/Corruption" },
+                "Ep 220": { sentiment: -1.5, rationale: "EX: Chaos/Comm" },
+                "Ep 221": { sentiment: 1, rationale: "NC: Negotiation Strat" }, // Avg of +2,0
+                "Ep 222": { sentiment: -1.6, rationale: "EX: Execution/Mod" }, // Avg of three 0s, two -2s (JCal made 5 mentions)
+                "Ep 226 (100d)": { sentiment: -0.7, rationale: "MD: Market Impact/Exec" } // Avg of +2, -3, -1, -2, +2, -2
+            },
+            "Chamath": {
+                "Ep 215": { sentiment: 1, rationale: "FT: Fiscal Tool" },
+                "Ep 217": { sentiment: -3, rationale: "AU: Austerity Impact" },
+                "Ep 218": { sentiment: -3, rationale: "IR: Inflation Risk" },
+                "Ep 219": { sentiment: 3, rationale: "TA: Tax Alternative" },
+                // No direct tariff mentions for Chamath in Ep 221 ("Doge Updates") per PDF analysis
+                "Ep 222": { sentiment: 2, rationale: "NC: Negotiation/Resilience" }, // Avg of +3,+3,0
+                "Ep 226 (Bessent)": { sentiment: 0, rationale: "UC: Investment context" }, // From "Trump Rally or Bessent Put"
+                "Ep 226 (100d)": { sentiment: 1.8, rationale: "SC: Supply Chain/NatSec" } // Avg of +4,-1,-1,+3,+4
+            },
+            "Friedberg": {
+                "Ep 215": { sentiment: -2, rationale: "AG: Agri. Impact" },
+                "Ep 217": { sentiment: 0, rationale: "UC: Neutral/Uncertain" },
+                "Ep 218": { sentiment: 2, rationale: "MP: Part of Master Plan" },
+                "Ep 219": { sentiment: -3, rationale: "ET: Exploitable Tactic" },
+                "Ep 221": { sentiment: -3, rationale: "EX: Rollout Critique/COMP" },
+                 // No direct tariff mentions for Friedberg in Ep 222 ("Great Tariff Debate") per PDF
+                "Ep 225 (Harvard)": { sentiment: -3, rationale: "RP: AI Lead Risk"},
+                "Ep 226 (Bessent)": { sentiment: 2, rationale: "NC: Negotiation Anchor" }, // From "Trump Rally or Bessent Put"
+                // No direct tariff mentions for Friedberg in Ep 226 (100d)
+            }
+        };
+
+        const episodes = ["Ep 215", "Ep 217", "Ep 218", "Ep 219", "Ep 220", "Ep 221", "Ep 222", "Ep 225 (Harvard)", "Ep 226 (Bessent)", "Ep 226 (100d)"];
+        // Filtered episodes for better display based on available data for these speakers
+        const displayedEpisodes = ["Ep 215", "Ep 217", "Ep 218", "Ep 219", "Ep 220", "Ep 221", "Ep 222", "Ep 225 (Harvard)", "Ep 226 (Bessent)", "Ep 226 (100d)"];
+
+
+        const headerRow = document.getElementById('headerRow');
+        displayedEpisodes.forEach(ep => {
+            const th = document.createElement('th');
+            th.textContent = ep.replace(" (Harvard)", "H").replace(" (Bessent)", "B").replace(" (100d)", "100"); // Shorten for header
+            headerRow.appendChild(th);
+        });
+
+        const heatmapBody = document.getElementById('heatmapBody');
+        for (const speaker in evolutionData) {
+            const tr = document.createElement('tr');
+            const speakerTd = document.createElement('td');
+            speakerTd.textContent = speaker;
+            tr.appendChild(speakerTd);
+
+            displayedEpisodes.forEach(ep => {
+                const td = document.createElement('td');
+                const data = evolutionData[speaker][ep];
+                if (data) {
+                    td.style.backgroundColor = getSentimentColor(data.sentiment);
+                    td.innerHTML = `${data.sentiment.toFixed(1)} <span class="rationale-tooltip">${data.rationale}</span>`;
+                } else {
+                    td.textContent = "N/A";
+                    td.classList.add("no-data");
+                }
+                tr.appendChild(td);
+            });
+            heatmapBody.appendChild(tr);
+        }
+
+        function getSentimentColor(sentiment) {
+            if (sentiment === null || sentiment === undefined) return '#f0f0f0'; // No data
+            if (sentiment >= 3) return '#1a9850';    // Strong Positive (Dark Green)
+            if (sentiment >= 1) return '#91cf60';    // Mild Positive (Light Green)
+            if (sentiment > -1 && sentiment < 1) return '#fee08b'; // Neutral (Yellow)
+            if (sentiment >= -2) return '#fc8d59';   // Mild Negative (Orange)
+            return '#d73027';                        // Strong Negative (Red)
+        }
+    </script>
+</body>
+</html>

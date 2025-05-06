@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariff Argument Thematic Strength</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        h1 { text-align: center; color: #2c3e50; }
+        .chart-container {
+            display: flex; /* Use flexbox for responsiveness */
+            flex-wrap: wrap; /* Allow charts to wrap */
+            justify-content: space-around; /* Distribute space */
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .speaker-chart {
+            width: 45%; /* Adjust for two charts per row, or 100% for one */
+            min-width: 350px; /* Minimum width before wrapping */
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding:15px;
+            border: 1px solid #ccc;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+        }
+        svg { display: block; margin: auto; }
+        .bar-positive { fill: #28a745; }
+        .bar-negative { fill: #dc3545; }
+        .axis { font-size: 10px; }
+        .axis path, .axis line { fill: none; stroke: #333; shape-rendering: crispEdges; }
+        .label { font-size: 10px; text-anchor: middle; }
+        .speaker-title { font-size: 14px; font-weight: bold; text-align: center; margin-bottom: 10px; color: #34495e;}
+    </style>
+</head>
+<body>
+    <h1>Tariff Argument Thematic Strength</h1>
+    <div class="chart-container" id="argumentChartsContainer">
+        </div>
+
+    <script>
+        // Simplified data: Speaker -> Argument Theme -> Strength (-3 to +3, positive=pro, negative=anti)
+        // Themes: Econ=Economic Impact, Neg=Negotiation, NSec=National Security/Supply Chain, DomInd=Domestic Industry, Cons=Consumer Welfare, Exec=Policy Execution
+        const argumentStrengthData = {
+            "Naval Ravikant": { Econ: 1, Neg: 0, NSec: 3, DomInd: 3, Cons: 0, Exec: 0 },
+            "Chamath P.":    { Econ: -1, Neg: 2, NSec: 2, DomInd: 1, Cons: -1, Exec: -1 }, // Avg/representative
+            "David Friedberg":{ Econ: -1, Neg: 0, NSec: -1, DomInd: 0, Cons: -1, Exec: -2 }, // Avg/representative
+            "Larry Summers":  { Econ: -3, Neg: -1, NSec: 0, DomInd: -2, Cons: -3, Exec: -1 },
+            "David Sacks":    { Econ: 0, Neg: 2, NSec: 3, DomInd: 1, Cons: 0, Exec: 0 }, // Focus on US Tariffs for Pro
+            "Ben Shapiro":    { Econ: -2, Neg: -2, NSec: 0, DomInd: 0, Cons: -3, Exec: -3 }
+        };
+        const themes = ["Econ", "Neg", "NSec", "DomInd", "Cons", "Exec"];
+        const themeLabels = {
+            "Econ": "Economic Impact", "Neg": "Negotiation", "NSec": "NatSec/SupplyChain",
+            "DomInd": "Domestic Industry", "Cons": "Consumer Welfare", "Exec": "Policy Execution"
+        };
+
+
+        const container = document.getElementById('argumentChartsContainer');
+
+        for (const speaker in argumentStrengthData) {
+            const speakerData = argumentStrengthData[speaker];
+
+            const chartDiv = document.createElement('div');
+            chartDiv.className = 'speaker-chart';
+            
+            const title = document.createElement('div');
+            title.className = 'speaker-title';
+            title.textContent = speaker;
+            chartDiv.appendChild(title);
+
+            const svgWidth = 340;
+            const svgHeight = 220;
+            const margin = { top: 20, right: 20, bottom: 70, left: 40 };
+            const width = svgWidth - margin.left - margin.right;
+            const height = svgHeight - margin.top - margin.bottom;
+
+            const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            svg.setAttribute("width", svgWidth);
+            svg.setAttribute("height", svgHeight);
+            
+            const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+            g.setAttribute("transform", `translate(${margin.left},${margin.top})`);
+            svg.appendChild(g);
+
+            // X scale (themes)
+            const xScale = (theme) => (themes.indexOf(theme) * (width / themes.length));
+            const barWidth = (width / themes.length) * 0.8;
+
+            // Y scale (strength)
+            const yDomain = [-3, 3];
+            const yScale = (val) => height - ((val - yDomain[0]) / (yDomain[1] - yDomain[0])) * height;
+            const yZero = yScale(0);
+
+            // X-axis
+            const xAxisG = document.createElementNS("http://www.w3.org/2000/svg", "g");
+            xAxisG.setAttribute("class", "axis");
+            xAxisG.setAttribute("transform", `translate(0,${height})`);
+            themes.forEach((theme, i) => {
+                const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                label.setAttribute("class", "label");
+                label.setAttribute("x", xScale(theme) + barWidth / 2);
+                label.setAttribute("y", 15); // Position below axis line
+                label.setAttribute("transform", `rotate(-45, ${xScale(theme) + barWidth / 2}, 15)`);
+                label.setAttribute("text-anchor", "end");
+                label.textContent = themeLabels[theme];
+                xAxisG.appendChild(label);
+            });
+            const xAxisLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            xAxisLine.setAttribute("x1", 0); xAxisLine.setAttribute("y1", 0);
+            xAxisLine.setAttribute("x2", width); xAxisLine.setAttribute("y2", 0);
+            xAxisG.appendChild(xAxisLine);
+            g.appendChild(xAxisG);
+
+
+            // Y-axis
+            const yAxisG = document.createElementNS("http://www.w3.org/2000/svg", "g");
+            yAxisG.setAttribute("class", "axis");
+            for (let i = yDomain[0]; i <= yDomain[1]; i++) {
+                const yPos = yScale(i);
+                const tickLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+                tickLine.setAttribute("x1", -5); tickLine.setAttribute("y1", yPos);
+                tickLine.setAttribute("x2", 0); tickLine.setAttribute("y2", yPos);
+                yAxisG.appendChild(tickLine);
+
+                const tickLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+                tickLabel.setAttribute("x", -10);
+                tickLabel.setAttribute("y", yPos + 3);
+                tickLabel.setAttribute("text-anchor", "end");
+                tickLabel.textContent = i;
+                yAxisG.appendChild(tickLabel);
+            }
+            const yAxisLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            yAxisLine.setAttribute("x1", 0); yAxisLine.setAttribute("y1", 0);
+            yAxisLine.setAttribute("x2", 0); yAxisLine.setAttribute("y2", height);
+            yAxisG.appendChild(yAxisLine);
+            g.appendChild(yAxisG);
+            
+            // Zero line
+            const zeroLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            zeroLine.setAttribute("x1", 0); zeroLine.setAttribute("y1", yZero);
+            zeroLine.setAttribute("x2", width); zeroLine.setAttribute("y2", yZero);
+            zeroLine.setAttribute("stroke", "#ccc"); zeroLine.setAttribute("stroke-dasharray", "2,2");
+            g.appendChild(zeroLine);
+
+
+            // Bars
+            themes.forEach(theme => {
+                const strength = speakerData[theme] || 0;
+                const bar = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+                bar.setAttribute("x", xScale(theme) + ( (width / themes.length) * 0.1) ); // Center bar
+                bar.setAttribute("width", barWidth);
+                
+                if (strength >= 0) {
+                    bar.setAttribute("y", yScale(strength));
+                    bar.setAttribute("height", yZero - yScale(strength));
+                    bar.setAttribute("class", "bar-positive");
+                } else {
+                    bar.setAttribute("y", yZero);
+                    bar.setAttribute("height", yScale(strength) - yZero);
+                    bar.setAttribute("class", "bar-negative");
+                }
+                g.appendChild(bar);
+            });
+            chartDiv.appendChild(svg);
+            container.appendChild(chartDiv);
+        }
+    </script>
+</body>
+</html>

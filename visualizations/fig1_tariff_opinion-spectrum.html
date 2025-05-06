@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tariff Opinion Spectrum & Argument Linkage</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+        h1 { text-align: center; color: #2c3e50; }
+        .chart-container {
+            position: relative;
+            width: 90%;
+            max-width: 800px;
+            height: 550px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        svg { display: block; margin: auto; }
+        .axis-label { font-size: 12px; fill: #555; }
+        .x-axis-label { text-anchor: middle; }
+        .y-axis-label { text-anchor: middle; transform: rotate(-90deg); }
+        .dot { cursor: pointer; transition: r 0.2s ease-in-out, opacity 0.2s ease-in-out; }
+        .dot:hover { r: 10px; opacity: 1; }
+        .tooltip {
+            position: absolute;
+            text-align: left;
+            padding: 8px;
+            font-size: 12px;
+            background: #222;
+            color: #fff;
+            border: 0px;
+            border-radius: 4px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            min-width: 150px;
+            max-width: 250px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+        }
+        .legend { margin-top: 20px; text-align: center; }
+        .legend-item { display: inline-block; margin-right: 15px; font-size: 12px; }
+        .legend-color { display: inline-block; width: 12px; height: 12px; margin-right: 5px; border: 1px solid #777; }
+    </style>
+</head>
+<body>
+    <h1>Tariff Opinion Spectrum & Argument Linkage</h1>
+    <div class="chart-container">
+        <svg id="opinionSpectrumChart" width="780" height="530"></svg>
+    </div>
+    <div class="tooltip" id="tooltip"></div>
+    <div class="legend">
+        <strong>Primary Focus Area (Y-Axis):</strong><br>
+        <span class="legend-item">1: Economic Impact/Execution</span>
+        <span class="legend-item">2: Negotiation/Strategy</span>
+        <span class="legend-item">3: National Security/Industry Protection</span>
+        <br><strong>Dot Color by Stance Type:</strong><br>
+        <span class="legend-item"><span class="legend-color" style="background-color: #28a745;"></span>Advocate</span>
+        <span class="legend-item"><span class="legend-color" style="background-color: #ffc107;"></span>Pragmatist/Conditional</span>
+        <span class="legend-item"><span class="legend-color" style="background-color: #dc3545;"></span>Opponent/Skeptic</span>
+        <span class="legend-item"><span class="legend-color" style="background-color: #6c757d;"></span>Observer/Reporter</span>
+    </div>
+
+    <script>
+        const speakersData = [
+            // Data based on previous detailed analysis
+            // Focus Area: 1=Economic Impact/Execution, 2=Negotiation/Strategy, 3=National Security/Industry Protection
+            { name: "Jason Calacanis", avgSentiment: -1.0, focusArea: 1, stanceType: "Observer/Skeptic", arguments: "Critiques execution, market volatility. Sees negotiation angle at times. Concerned about unpredictability." },
+            { name: "Naval Ravikant", avgSentiment: 3.5, focusArea: 3, stanceType: "Advocate", arguments: "Protect strategic industries (semis, drones), national security, middle class support." },
+            { name: "Chamath Palihapitiya", avgSentiment: 0.8, focusArea: 2, stanceType: "Pragmatist/Conditional", arguments: "Fluctuates: Fiscal tool, inflation risk, tax alternative, negotiation leverage, supply chain resilience." },
+            { name: "David Friedberg", avgSentiment: -0.8, focusArea: 1, stanceType: "Pragmatist/Conditional", arguments: "Fluctuates: Agri impact, econ experiment, competitiveness, AI risk, negotiation anchor." },
+            { name: "Joe Lonsdale", avgSentiment: 0.5, focusArea: 2, stanceType: "Pragmatist/Conditional", arguments: "Negotiation tool (fentanyl), defense, domestic production. Not a fan personally." },
+            { name: "Andrew Schulz", avgSentiment: 1.0, focusArea: 2, stanceType: "Pragmatist/Conditional", arguments: "Layman's view: Negotiation tactic ('haggling'), acknowledges business impact." },
+            { name: "Ben Shapiro", avgSentiment: -3.7, focusArea: 1, stanceType: "Opponent/Skeptic", arguments: "Poor rollout, raises prices, harms consumers, mishandles negotiations." },
+            { name: "Larry Summers", avgSentiment: -3.8, focusArea: 1, stanceType: "Opponent/Skeptic", arguments: "Major econ harm (market loss, inflation, unemployment), illogical rationale, too broad." },
+            { name: "Ezra Klein", avgSentiment: -3.2, focusArea: 1, stanceType: "Opponent/Skeptic", arguments: "Raises prices, uncertainty, erratic justifications, flawed process, bad outcomes." },
+            { name: "David Sacks", avgSentiment: 1.5, focusArea: 3, stanceType: "Advocate", arguments: "Pro U.S. Tariffs: Negotiation leverage, NatSec (rare earths). Anti China's Tariffs: Unfair." }, // Avg of +3 (US) and -3 (China's) and +4 (NatSec) gives ~1.3, but focus for US tariffs is positive
+            { name: "Ryan Peterson", avgSentiment: -2.2, focusArea: 1, stanceType: "Opponent/Skeptic", arguments: "Supply chain disruption, freight decline, SME bankruptcy risk, poor planning." },
+            { name: "Aaron Levie", avgSentiment: -1.0, focusArea: 1, stanceType: "Pragmatist/Conditional", arguments: "Headwind to AI. Supports 'surgical tariffs', critiques inconsistent messaging." },
+            { name: "Tim Dillon", avgSentiment: -2.0, focusArea: 1, stanceType: "Opponent/Skeptic", arguments: "Triggers retaliation (rare earth restrictions), trade war escalation." }
+        ];
+
+        const stanceColors = {
+            "Advocate": "#28a745", // Green
+            "Pragmatist/Conditional": "#ffc107", // Yellow
+            "Opponent/Skeptic": "#dc3545", // Red
+            "Observer/Reporter": "#6c757d" // Grey
+        };
+
+        const svg = document.getElementById('opinionSpectrumChart');
+        const tooltip = document.getElementById('tooltip');
+        const margin = { top: 40, right: 40, bottom: 70, left: 70 };
+        const width = +svg.getAttribute('width') - margin.left - margin.right;
+        const height = +svg.getAttribute('height') - margin.top - margin.bottom;
+
+        const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        g.setAttribute("transform", `translate(${margin.left},${margin.top})`);
+        svg.appendChild(g);
+
+        // Scales
+        const x = { min: -5, max: 5 };
+        const y = { min: 0.5, max: 3.5 }; // Adjusted for focusArea categories + padding
+
+        const xScale = val => ((val - x.min) / (x.max - x.min)) * width;
+        const yScale = val => height - ((val - y.min) / (y.max - y.min)) * height;
+
+        // Axes
+        // X-axis
+        const xAxis = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        xAxis.setAttribute("x1", 0);
+        xAxis.setAttribute("y1", height);
+        xAxis.setAttribute("x2", width);
+        xAxis.setAttribute("y2", height);
+        xAxis.setAttribute("stroke", "#333");
+        g.appendChild(xAxis);
+
+        for (let i = x.min; i <= x.max; i++) {
+            const tick = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            tick.setAttribute("x1", xScale(i));
+            tick.setAttribute("y1", height);
+            tick.setAttribute("x2", xScale(i));
+            tick.setAttribute("y2", height + 5);
+            tick.setAttribute("stroke", "#333");
+            g.appendChild(tick);
+            const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            label.setAttribute("x", xScale(i));
+            label.setAttribute("y", height + 20);
+            label.setAttribute("text-anchor", "middle");
+            label.setAttribute("font-size", "10px");
+            label.textContent = i;
+            g.appendChild(label);
+        }
+        const xAxisLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        xAxisLabel.setAttribute("class", "axis-label x-axis-label");
+        xAxisLabel.setAttribute("x", width / 2);
+        xAxisLabel.setAttribute("y", height + 45);
+        xAxisLabel.textContent = "Average Sentiment Score (Anti-Tariff < 0 < Pro-Tariff)";
+        g.appendChild(xAxisLabel);
+
+        // Y-axis
+        const yAxis = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        yAxis.setAttribute("x1", 0);
+        yAxis.setAttribute("y1", 0);
+        yAxis.setAttribute("x2", 0);
+        yAxis.setAttribute("y2", height);
+        yAxis.setAttribute("stroke", "#333");
+        g.appendChild(yAxis);
+
+        const focusAreas = ["Invalid", "Econ/Exec", "Negotiation", "NatSec/Industry"]; // Index matches focusArea
+        for (let i = 1; i <= 3; i++) {
+            const tick = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            tick.setAttribute("x1", -5);
+            tick.setAttribute("y1", yScale(i));
+            tick.setAttribute("x2", 0);
+            tick.setAttribute("y2", yScale(i));
+            tick.setAttribute("stroke", "#333");
+            g.appendChild(tick);
+            const label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            label.setAttribute("x", -10);
+            label.setAttribute("y", yScale(i) + 3); // Adjust for alignment
+            label.setAttribute("text-anchor", "end");
+            label.setAttribute("font-size", "10px");
+            label.textContent = focusAreas[i];
+            g.appendChild(label);
+        }
+        const yAxisLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        yAxisLabel.setAttribute("class", "axis-label y-axis-label");
+        yAxisLabel.setAttribute("x", -height / 2);
+        yAxisLabel.setAttribute("y", -50); // Adjusted for space
+        yAxisLabel.textContent = "Primary Focus Area";
+        g.appendChild(yAxisLabel);
+
+
+        // Dots
+        speakersData.forEach(d => {
+            const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            dot.setAttribute("class", "dot");
+            dot.setAttribute("cx", xScale(d.avgSentiment));
+            dot.setAttribute("cy", yScale(d.focusArea));
+            dot.setAttribute("r", 7);
+            dot.setAttribute("fill", stanceColors[d.stanceType] || "#ccc");
+            dot.setAttribute("opacity", 0.7);
+
+            dot.addEventListener('mouseover', (event) => {
+                tooltip.style.opacity = .9;
+                tooltip.innerHTML = `<strong>${d.name}</strong><br>Avg Sentiment: ${d.avgSentiment.toFixed(1)}<br>Focus: ${focusAreas[d.focusArea]}<br>Stance: ${d.stanceType}<br>Arguments: ${d.arguments}`;
+                
+                // Position tooltip relative to chart container
+                const chartRect = svg.getBoundingClientRect();
+                const containerRect = svg.parentElement.getBoundingClientRect();
+                
+                let left = event.clientX - containerRect.left + 15;
+                let top = event.clientY - containerRect.top - 15;
+
+                // Ensure tooltip doesn't go off-screen
+                tooltip.style.left = Math.min(left, containerRect.width - tooltip.offsetWidth - 10) + 'px';
+                tooltip.style.top = Math.min(top, containerRect.height - tooltip.offsetHeight -10) + 'px';
+
+            });
+            dot.addEventListener('mouseout', () => {
+                tooltip.style.opacity = 0;
+            });
+            g.appendChild(dot);
+
+            // Add name label next to dot
+            const nameLabel = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            nameLabel.setAttribute("x", xScale(d.avgSentiment) + 10);
+            nameLabel.setAttribute("y", yScale(d.focusArea) + 4);
+            nameLabel.textContent = d.name.split(" ")[0]; // First name
+            nameLabel.setAttribute("font-size", "9px");
+            nameLabel.setAttribute("fill", "#333");
+            g.appendChild(nameLabel);
+        });
+
+    </script>
+</body>
+</html>
